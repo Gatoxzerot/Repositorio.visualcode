@@ -1,0 +1,121 @@
+/* Reset de estilo predeterminado del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding-top: 80px; /* Ajuste del espacio superior para evitar la superposición del contenido */
+}
+
+#contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Añadir padding lateral */
+    border-bottom: 2px solid #e0e0e0;
+    background-color: white;
+    flex-wrap: wrap; /* Permitir que los elementos envuelvan si es necesario */
+}
+
+#cabecera img {
+    height: 50px;
+}
+
+#cabecera h2 {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #333;
+    white-space: nowrap; /* Prevenir que los textos se dividan en múltiples líneas */
+}
+
+#cuadrolateral {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#cuadrolateral h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#cuadrolateral h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#contenido2 {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#menu1,
+#cuadrolateral {
+    flex: 0 0 30%; /* Establecer el ancho de los elementos */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+#menu2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+#menu2 h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+#pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 2px solid #e0e0e0;
+}
+
+#pie img {
+    height: 40px;
+}
+
+#pie h3 {
+    font-size: 14px;
+    color: #777;
+}
