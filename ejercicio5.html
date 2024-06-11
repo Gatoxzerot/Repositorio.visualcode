@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Cuadrados</title>
+</head>
+<body>
+    <h1>Suma de los 10 Primeros Números Elevados al Cuadrado</h1>
+    <div id="output"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const output = document.getElementById('output');
+            let sum = 0;
+            let i = 1;
+
+            // Usando un bucle while
+            while (i <= 10) {
+                sum += i * i;
+                i++;
+            }
+
+            output.textContent = `La suma de los 10 primeros números elevados al cuadrado es: ${sum}`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplos de 7</title>
+</head>
+<body>
+    <h1>Múltiplos de 7 entre 1 y 100</h1>
+    <div id="output"></div>
+    <div id="sum"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const output = document.getElementById('output');
+            const sumOutput = document.getElementById('sum');
+            let result = '';
+            let sum = 0;
+
+            // Usando un bucle for
+            for (let i = 1; i <= 100; i++) {
+                if (i % 7 === 0) {
+                    result += `${i} `;
+                    sum += i;
+                }
+            }
+
+            // Alternativamente, usando un bucle while
+            /*
+            let i = 1;
+            while (i <= 100) {
+                if (i % 7 === 0) {
+                    result += `${i} `;
+                    sum += i;
+                }
+                i++;
+            }
+            */
+
+            output.textContent = `Múltiplos de 7: ${result.trim()}`;
+            sumOutput.textContent = `Suma de múltiplos de 7: ${sum}`;
+        });
+    </script>
+</body>
+</html>

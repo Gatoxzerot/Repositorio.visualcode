@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar Múltiplos de 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sumar Múltiplos de 5 entre 500 y 1000</h1>
+    <div>
+        <button onclick="sumarMultiplosDe5()">Calcular Suma</button>
+    </div>
+    <div id="output"></div>
+    <script>
+        function sumarMultiplosDe5() {
+            let suma = 0;
+            let i = 500;
+
+            while (i <= 1000) {
+                if (i % 5 === 0) {
+                    suma += i;
+                }
+                i++;
+            }
+
+            const output = document.getElementById('output');
+            output.textContent = `La suma de todos los múltiplos de 5 entre 500 y 1000 es: ${suma}`;
+        }
+    </script>
+</body>
+</html>

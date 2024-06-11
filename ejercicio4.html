@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar del 99</title>
+</head>
+<body>
+    <h1>Tabla de Multiplicar del 99</h1>
+    <div id="output"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const output = document.getElementById('output');
+            let result = '';
+
+            // Generar la tabla de multiplicar del 99
+            for (let i = 1; i <= 10; i++) {
+                result += `99 x ${i} = ${99 * i}<br>`;
+            }
+
+            output.innerHTML = result;
+        });
+    </script>
+</body>
+</html>

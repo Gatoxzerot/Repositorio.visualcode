@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Factorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calcular el Factorial de un Número Entero</h1>
+    <div>
+        <label for="numero">Ingrese un número entero:</label>
+        <input type="number" id="numero" min="0">
+        <button onclick="calcularFactorial()">Calcular Factorial</button>
+    </div>
+    <div id="output"></div>
+    <script>
+        function calcularFactorial() {
+            const numero = parseInt(document.getElementById('numero').value);
+            const output = document.getElementById('output');
+            if (isNaN(numero) || numero < 0) {
+                output.textContent = 'Por favor, ingrese un número entero válido mayor o igual a 0.';
+                return;
+            }
+
+            let factorial = 1;
+            let i = 1;
+
+            while (i <= numero) {
+                factorial *= i;
+                i++;
+            }
+
+            output.textContent = `El factorial de ${numero} es: ${factorial}`;
+        }
+    </script>
+</body>
+</html>
